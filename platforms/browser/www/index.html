@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+	
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script> 
+		   $(function(){ $("head").load("head.html") });
+		   $(function(){ $("#footer").load("footer.html") });
+		</script>
+		
+	
+</head>
+
+<body>
+<div id="deviceready" class="blink">
+	<p class="event listening"></p>
+	<div class="event received">
+
+		<div class="body-back">
+			<div class="masthead pdng-stn1">
+		
+				<div class="phone-box wrap push" id="home">
+					<div class="menu-notify">
+						<div class="Profile-mid">
+							<h5 class="pro-link"><a href="index.html">SIMPEL</a></h5>
+						</div>
+						<div class="Profile-right">
+							<div id="keluar_masuk">
+								<a href="#small-dialog" id="masuk" class="sign-in popup-top-anim"> <i class="fa fa-user"></i></a>
+							</div>
+								<!-- modal -->
+							<div id="small-dialog" class="mfp-hide">
+								<div class="login-modal"> 	
+									<div class="booking-info">
+									   <h3><a href="index.html">RS <span>Elizabeth</span></a></h3>
+										
+									</div>
+									<div class="login-form">
+										<form action="#" method="post" id="login">
+											<p>Email </p>
+											<input type="text" name="email" required=""/>
+											<p>Password</p>
+											<input type="password" name="password" required=""/>	 
+											<div class="wthree-text"> 
+												<ul> 
+													<li>
+														<input type="checkbox" id="brand" value="">
+														<label for="brand"><span></span> Ingat Saya ?</label>  
+													</li>
+													<li> <a href="#">Lupa password?</a> </li>
+												</ul>
+												<div class="clear"> </div>
+											</div> 
+											<input type="submit" value="Masuk">		
+										</form>
+										<p>Belum punya akun ?<a href="#small-dialog1" class="sign-in popup-top-anim"> Daftar</a></p>
+									</div> 
+								</div>
+							</div>
+							<!-- //modal --> 
+							<!-- modal-two -->
+							<div id="small-dialog1" class="mfp-hide">
+								<div class="login-modal">  
+									<div class="booking-info">
+									   <h3><a href="index.html">RS <span>Elizabeth</span></a></h3>
+										
+									</div>
+									<div class="login-form signup-form">
+										<form action="#" id="register" method="post">
+											<p>No RM </p>
+											<input type="number" name="no_rm" id="no_rm"  required=""/>
+											<p>Nama </p>
+											<input type="text" name="name" id="name" class="readonly" placeholder="Nama terisi otomatis jika No RM benar" required />
+											<p>No Telp </p>
+											<input type="number" name="no_telp"  required />
+											<p>Email </p>
+											<input type="text" name="email"  required />
+											<p>Password</p>
+											<input type="password" name="password" placeholder="" required />	
+											<p>Ulangi Password</p>
+											<input type="password" name="c_password" placeholder="" required />
+											<p></p>
+											<input type="submit" value="Daftar">		
+										</form> 
+									</div> 
+								</div>
+							</div>
+							<!-- //modal-two --> 
+							
+						</div>
+						<div class="clearfix"></div>
+					</div> 
+		<!-- banner -->
+					<div class="details-grid">
+						<div class="details-shade">
+							<div class="details-right">
+								<i style="font-size:50px;color:white" class="fa fa-hospital-o"></i>
+								<h3>Selamat Datang di SIMPEL</h3>
+								<h4>Nikmati kemudahan yang kami berikan</h4>
+									
+								
+							</div>
+							<!-- <div class="banner_search"> -->
+								<!-- <form action="#" method="post"> -->
+									<!-- <input type="search" name="search" value="Where to go ?" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Where to go ?';}" required=""> -->
+									<!-- <input type="submit" value=" "> -->
+								<!-- </form> -->
+							<!-- </div>  -->
+						</div>
+					</div>
+					<div id="menu_circle"></div>
+		   <!-- //banner -->
+		   <!--/welcome-->
+					<div class="w3agile welcome"> 
+						<h3 class="w3ls-title">Apa itu SIMPEL ?</h3> 
+						<div class="b-bottom">
+							<div class="col-md-6 banner_bottom_left">
+								<p><i>SIMPEL adalah kepanjangan dari Sistem Informasi Mobile Pelayanan ELizabeth yang bekerja secara online sebagai sarana untuk mempermudah pasien melakukan administrasi maupun konsultasi agar dapat dilakukan secara Mobile dimana saja dan kapan saja.</i></p>
+							</div>
+						<div class="col-md-6 banner_bottom_right">
+							<div class="wthree_banner_bottom_right_grids">
+								<div class="col-md-6 banner_bottom_right_grid">
+									<div class="view view-tenth">
+									<img src="images/depan.JPG" class="img-responsive" alt="">
+										
+										<div class="mask">
+											<a href="#">
+												<div class="agile_text_box">
+													<i class="fa fa-stethoscope" aria-hidden="true"></i>
+													<h3>Pendaftaran Online</h3>
+													<p>Pasien yang telah memiliki no RM dapat mendaftar online tanpa harus ke RS Elizabeth baik Swasta, BPJS maupun Relasi</p>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 banner_bottom_right_grid">
+									<div class="view view-tenth">
+										<img src="images/poli.JPG" class="img-responsive" alt="">
+										<div class="mask">
+										   <a href="#">
+												<div class="agile_text_box">
+													<i class="fa fa-stethoscope" aria-hidden="true"></i>
+													<h3>Telemedicine</h3>
+													<p>Pasien yang telah mendaftar secara online maupun offline dapat melakukan konsultasi secara online di hari H dengan dokter spesialis dengan syarat saldo yang dimiliki melebihi tarif konsultasi. Fasilitas ini hanya diperuntukkan untuk pasien swasta</p>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="wthree_banner_bottom_right_grids">
+								<div class="col-md-6 banner_bottom_right_grid">
+									<div class="view view-tenth">
+									<img src="images/kamar.JPG" class="img-responsive" alt="">
+										
+										<div class="mask">
+										  <a href="#">
+											<div class="agile_text_box">
+												<i class="fa fa-bed" aria-hidden="true"></i>
+												<h3>Kamar</h3>
+												<p>Fasilitas ini untuk melihat daftar harga kamar, fasilitas kamar, foto kamar serta monitoring ketersediaan kosong</p>
+											</div>
+										   </a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 banner_bottom_right_grid">
+									<div class="view view-tenth">
+										<img src="images/about-us.png" class="img-responsive" alt="">
+										<div class="mask">
+											<a href="#">
+												<div class="agile_text_box">
+													<i class="fa fa-users" aria-hidden="true"></i>
+													<h3>Tentang Kami</h3>
+													<p>Menampilkan data tentang rumah sakit, manajemen rumah sakit, dokter spesialis, serta pembuat aplikasi SIMPEL</p>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+							<div class="clearfix"> </div>
+						</div>	
+					</div>
+				<!--//welcome-->
+				<!--/footer-->
+					<div id="footer">
+					</div>
+					
+			<!--/footer-->
+			
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/scripts.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+	app.initialize();
+</script>
+<script type="text/javascript">
+	var nama;
+	$(".readonly").on('keydown paste', function(e){
+        e.preventDefault();
+    });
+	$(function(){
+	  $("#login").submit(function(){
+		$.ajax({
+			type: "POST",
+			url:"http://192.168.1.251:88/api-rse/public/api/login",
+			data:$(this).serialize(),
+		  
+			dataType: 'json',
+			encode: true,
+		  
+			success:function(hasil) {
+				
+				document.querySelector('.mfp-close').click();
+				var det = details('details')
+				
+			},
+			error:function(hasil) {
+				alert('Email / Password salah');
+			}
+		  
+		})
+		return false;
+	  });
+	});
+	$(function(){
+	  $("#register").submit(function(){
+		$.ajax({
+			type: "POST",
+			url:"http://192.168.1.251:88/api-rse/public/api/register",
+			data:$(this).serialize(),
+		  
+			dataType: 'json',
+			encode: true,
+		  
+			success:function(hasil) {
+				
+				document.querySelector('.mfp-close').click();
+				var det = details('details')
+				
+			},
+		  
+		})
+		return false;
+	  });
+	});
+	function details(val){
+		$.ajax({
+			type: "POST",
+			url:"http://192.168.1.251:88/api-rse/public/api/details",
+			data:{request:val},
+			  
+			dataType: 'json',
+			encode: true,
+			  
+			success:function(hasil) {
+				if(val==="logout"){
+					window.location.reload()
+				}else if(val==="details"){
+					$("#masuk").remove();
+					$("#keluar_masuk").html("<a href='#' onclick='details(\"logout\"); return false;' id='keluar' class='sign-in popup-top-anim'> <i style='font-size:9px'>Selamat datang "+hasil.name+", Keluar</i></a>");
+					$(function(){ $("#menu_circle").load("menu_circle.html") });
+				}
+				
+			}, 
+		})
+	}
+	function details2(val,no_rm){
+		$.ajax({
+			type: "POST",
+			url:"http://192.168.1.251:88/api-rse/public/api/details2",
+			data:{request:val,no_rm:no_rm},
+			  
+			dataType: 'json',
+			encode: true,
+			  
+			success:function(hasil) {
+				
+				$("#name").val(hasil[0].nama_pasien);
+				<!-- alert(hasil[0].nama_pasien) -->
+			}, 
+		})
+	}
+	setInterval(reload, 540000);
+	function reload(){
+		if (Cookies.get("refreshToken") === 'undefined'){
+	 
+		} else {
+			$.ajax({
+				type: "POST",
+				url:"http://192.168.1.251:88/api-rse/public/api/refreshtoken",
+				data:$(this).serialize(),
+				  
+				dataType: 'json',
+				encode: true,
+				  
+				success:function(hasil) {
+				},
+			})
+		}
+	}
+	$(document).ready(function(){
+		$("#no_rm").keyup(function(){
+			if($(this).val().length == 8){
+				details2('cari_rm',$(this).val());
+			}else{
+				$("#name").val("");
+			}
+		});
+	});
+</script>
+</body>
+
+</html>
